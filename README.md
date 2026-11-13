@@ -2,6 +2,12 @@
 
 Laboratorio en Python 3.10+ con TensorFlow/Keras y transfer learning. Clasifica rostros en **niño (0–12), joven (13–25), adulto (26–59), mayor (60–116)**. Se respeta la descripción de la consigna: el corte en 50 del ejemplo era inconsistente.
 
+## Resultados del primer entrenamiento
+
+El repositorio ya incluye UTKFace en `data/UTKFace` y los resultados en `artifacts/`. Se verificaron las métricas desde las 4.742 predicciones de prueba: **accuracy 62,74 % y F1 macro 64,56 %**. El [informe completo](INFORME.md) presenta las métricas por clase, gráficos, conclusiones y limitaciones.
+
+El modelo entrenado `model.keras` no está incluido; los CSV conservan rutas de la computadora de origen. Para volver a ejecutar la inferencia se necesita el modelo original y adaptar esas rutas. Si se desea entrenar otra vez, preservar el experimento existente usando `--output artifacts/new_run`.
+
 ## Instalación
 
 Desde la raíz del repositorio:
