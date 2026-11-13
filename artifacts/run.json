@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "classes": [
+    "child",
+    "young",
+    "adult",
+    "senior"
+  ],
+  "tensorflow": "2.21.0",
+  "epochs_requested": 5,
+  "epochs_run": 5,
+  "split_sizes": {
+    "train": 14224,
+    "val": 4742,
+    "test": 4742
+  }
+}
